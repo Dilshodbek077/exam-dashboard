@@ -62,22 +62,21 @@ btnSave.addEventListener("click", (e) => {
 
     e.preventDefault();
 
-  const name = document.getElementById("formName").value.trim();
-  const clas = document.getElementById("fomrClass").value.trim();
-  const email = document.getElementById("FormEmail").value.trim();
-  const gender = document.getElementById("formGender").value;
-  const subject = document.getElementById("formSubject").value.trim();
-  const age = document.getElementById("formAge").value.trim(); // kerak bo‘lsa qo‘shamiz
-  const about = document.getElementById("formAbout").value.trim();
+    const name = document.getElementById("formName").value.trim();
+    const clas = document.getElementById("fomrClass").value.trim();
+    const email = document.getElementById("FormEmail").value.trim();
+    const gender = document.getElementById("formGender").value;
+    const subject = document.getElementById("formSubject").value.trim();
+    const age = document.getElementById("formAge").value.trim();
+    const about = document.getElementById("formAbout").value.trim();
 
-  if (!name || !clas || !email || !subject) {
-    alert(" Iltimos, barcha majburiy maydonlarni to‘ldiring!");
-    return;
-  }
+    if (!name || !clas || !email || !subject) {
+        alert(" Iltimos, barcha majburiy maydonlarni to‘ldiring!");
+        return;
+    }
 
-  // yangi qator yaratamiz
-  const row = document.createElement("tr");
-  row.innerHTML = `
+    const row = document.createElement("tr");
+    row.innerHTML = `
     <td>${name}</td>
     <td>${subject}</td>
     <td>${clas}</td>
@@ -89,34 +88,32 @@ btnSave.addEventListener("click", (e) => {
     </td>
   `;
 
-  tableBody.appendChild(row);
+    tableBody.appendChild(row);
 
-  // Delete tugmasi ishlashi
-  row.querySelector(".delete-btn").addEventListener("click", () => {
-    row.remove();
-  });
+    row.querySelector(".delete-btn").addEventListener("click", () => {
+        row.remove();
+    });
 
-  // Edit tugmasi ishlashi
-  row.querySelector(".edit-btn").addEventListener("click", () => {
-    document.getElementById("formName").value = name;
-    document.getElementById("fomrClass").value = clas;
-    document.getElementById("FormEmail").value = email;
-    document.getElementById("formGender").value = gender;
-    document.getElementById("formSubject").value = subject;
-    document.getElementById("formAge").value = age;
-    document.getElementById("formAbout").value = about;
 
-    row.remove(); // eski satrni o‘chirib tashlaymiz
-  });
+    row.querySelector(".edit-btn").addEventListener("click", () => {
+        document.getElementById("formName").value = name;
+        document.getElementById("fomrClass").value = clas;
+        document.getElementById("FormEmail").value = email;
+        document.getElementById("formGender").value = gender;
+        document.getElementById("formSubject").value = subject;
+        document.getElementById("formAge").value = age;
+        document.getElementById("formAbout").value = about;
 
-  // forma tozalash
-  document.getElementById("formName").value = "";
-  document.getElementById("fomrClass").value = "";
-  document.getElementById("FormEmail").value = "";
-  document.getElementById("formGender").value = "";
-  document.getElementById("formSubject").value = "";
-  document.getElementById("formAge").value = "";
-  document.getElementById("formAbout").value = "";
+        row.remove();
+    });
+
+    document.getElementById("formName").value = "";
+    document.getElementById("fomrClass").value = "";
+    document.getElementById("FormEmail").value = "";
+    document.getElementById("formGender").value = "";
+    document.getElementById("formSubject").value = "";
+    document.getElementById("formAge").value = "";
+    document.getElementById("formAbout").value = "";
 });
 
 
@@ -131,4 +128,3 @@ localStorage.setItem("students", JSON.stringify(students));
 
 
 
-  
