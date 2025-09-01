@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Teacher</title>
+</head>
+
+<body>
+    <div class="containerr">
+        <div class="box-1">
+            <div class="box-3">
+                <img src="./img/logo.png" alt="img">
+                <h3>@user1234567</h3>
+            </div>
+            <div class="box-4">
+                <ul class="ul-list">
+                    <a href="./index.html">
+                        <li class="li-list dash"><span><i class="fa-regular fa-house"
+                                    style="color: white;"></i></span>Dashboard</li>
+                    </a>
+                    <a href="#">
+                        <li class="li-list"><span><i class="fa-regular fa-house"
+                                    style="color: white;"></i></span>Teachers</li>
+                    </a>
+                    <a href="#">
+                        <li class="li-list"><span><i class="fa-solid fa-graduation-cap"
+                                    style="color: #ffffff;"></i></i></span>Students</li>
+                    </a>
+                    <a href="#">
+                        <li class="li-list"><span><i class="fa-solid fa-building-columns"
+                                    style="color: #ffffff;"></i></span>Billing</li>
+                    </a>
+                    <a href="#">
+                        <li class="li-list"><span><i class="fa-solid fa-gear"
+                                    style="color: #ffffff;"></i></span>Settings and profile</li>
+                    </a>
+                    <a href="#">
+                        <li class="li-list"><span><i class="fa-solid fa-square-poll-horizontal"
+                                    style="color: #ffffff;"></i></span>Exams</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="box-5">
+                <ul class="ul-list">
+                    <a href="#">
+                        <li class="li-list"><span><i class="fa-solid fa-building-columns"
+                                    style="color: #ffffff;"></i></span>Features</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="box-2">
+            <nav class="navbarr">
+                <span class="iconn"><i class="fa-regular fa-bell" style="color: #000000;"></i></span>
+                <button id="btn-logOut" type="submit" class="btn-3">Log out</button>
+            </nav>
+
+            <div id="modal-container" class="local">
+
+                <div class="modal-content">
+                    <p class="textSure">Are you sure ?</p>
+                    <div class="buttons">
+                        <button id="btnYes">yes</button>
+                        <button id="btnNo">no</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="box-12">
+                <h2>Teacher</h2>
+                <button id="teach" class="btn-4">Add Teachers</button>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="box-14">
+                <div class="box-13">
+                    <span><i class="fa-solid fa-magnifying-glass" style="color: #686e78;"></i></span>
+                    <form>
+                        <input class="searchs" type="search" placeholder="Search for a student by name or email">
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="box-15" id="box-15">
+                <img src="./img/sleep.png" alt="img">
+            </div>
+
+
+
+
+
+            <div id="modal-containerr" class="locall">
+                <div class="modal-contentt">
+
+                    <div class="f1">
+                        <div class="f2">
+                            <label style="color: #8A8A8A; justify-content: start;" for="FullName">Full Name</label>
+                            <form>
+                                <input id="formName" class="formname" type="text" placeholder="Full Name" required>
+                            </form>
+                        </div>
+
+                        <div class="f2">
+                            <label style="color: #8A8A8A; justify-content: start;" for="FullName">Class</label>
+                            <form>
+                                <input id="fomrClass" class="formname" type="text" placeholder="Class" required>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                    <div class="f1 hhh">
+                        <div class="f2">
+                            <label style="color: #8A8A8A; justify-content: start;" for="FullName">Email address</label>
+                            <form>
+                                <input id="FormEmail" class="formname" type="email" placeholder="Email address" required>
+                            </form>
+                        </div>
+
+                        <div class="f2">
+                            <label style="color: #8A8A8A; justify-content: start;" for="FullName">Gender</label>
+                            <form>
+                                <select class="gend" id="formGender" required>Gender
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                </select>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                    <div class="f1 hhh">
+                        <div class="f2">
+                            <label style="color: #8A8A8A; justify-content: start;" for="FullName">Subject</label>
+                            <form>
+                                <input id="formSubject" class="formname" type="text" placeholder="Subject" required>
+                            </form>
+                        </div>
+
+                        <div class="f2">
+                            <label style="color: #8A8A8A; justify-content: start;" for="FullName">Age</label>
+                            <form>
+                                <input id="formAge" class="formname" type="number" placeholder="Age" required>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                    <div class="f1 hhh">
+                        <div class="f2">
+                            <label style="color: #8A8A8A; justify-content: start;" for="FullName">About</label>
+                            <form>
+                                <textarea id="formAbout" placeholder="About"></textarea>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                    <div class="f1 hhh">
+                        <div class="f2">
+                            <button class="btnSave" id="btnsave">save</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+           <div class="box-17">
+             <div class="box-16" id="box-16">
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Subject</th>
+                            <th>Class</th>
+                            <th>Email address</th>
+                            <th>Gender</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+           </div>
+
+
+
+
+
+            <script src="./js/main.js"></script>
+</body>
+
+</html>
